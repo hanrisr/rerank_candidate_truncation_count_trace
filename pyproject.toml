@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "hanrisr-aigcgen_jd029"
+name = "hanrisr-rerank_candidate_truncation_count_trace"
 version = "0.1.0"
 description = "统计各来源片段的贡献量与占比，标出AIGC 内容生成工程师·重排模型的候选截断上最主要的来源"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://hanrisr.github.io"
-Repository = "https://github.com/hanrisr/aigcgen_jd029"
-Issues = "https://github.com/hanrisr/aigcgen_jd029/issues"
+Repository = "https://github.com/hanrisr/rerank_candidate_truncation_count_trace"
+Issues = "https://github.com/hanrisr/rerank_candidate_truncation_count_trace/issues"
 
 [project.scripts]
-aigcgen_jd029 = "aigcgen_jd029:main"
+rerank_candidate_truncation_count_trace = "rerank_candidate_truncation_count_trace:main"
 
 [tool.setuptools]
-py-modules = ["aigcgen_jd029"]
+py-modules = ["rerank_candidate_truncation_count_trace"]

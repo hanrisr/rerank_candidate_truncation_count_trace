@@ -1,11 +1,11 @@
-# aigcgen_jd029
+# rerank_candidate_truncation_count_trace
 
 **追溯AIGC 内容生成工程师·重排模型的候选截断里每一份贡献来自哪里。**
 
-`aigcgen_jd029` —— 统计各来源片段的贡献量与占比，标出AIGC 内容生成工程师·重排模型的候选截断上最主要的来源
+`rerank_candidate_truncation_count_trace` —— 统计各来源片段的贡献量与占比，标出AIGC 内容生成工程师·重排模型的候选截断上最主要的来源
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`aigcgen_jd029.py` 拷走就能用
+- 单文件，`rerank_candidate_truncation_count_trace.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install hanrisr-aigcgen_jd029
+pip install hanrisr-rerank_candidate_truncation_count_trace
 ```
 
 装完直接用命令名调用：
 
 ```bash
-aigcgen_jd029 --help
+rerank_candidate_truncation_count_trace --help
 ```
 
-也可以不用安装，直接把 `aigcgen_jd029.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `rerank_candidate_truncation_count_trace.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ aigcgen_jd029 --help
 ## 用法
 
 ```bash
-python aigcgen_jd029.py --file input.txt
-python aigcgen_jd029.py --text "示例内容"
-python aigcgen_jd029.py --file input.txt --json
+python rerank_candidate_truncation_count_trace.py --file input.txt
+python rerank_candidate_truncation_count_trace.py --text "示例内容"
+python rerank_candidate_truncation_count_trace.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python aigcgen_jd029.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_aigcgen_jd029.py
+python test_rerank_candidate_truncation_count_trace.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_aigcgen_jd029.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/hanrisr/aigcgen_jd029>
+- GitHub 仓库：<https://github.com/hanrisr/rerank_candidate_truncation_count_trace>
 
 ---
 
@@ -79,7 +79,7 @@ python test_aigcgen_jd029.py
 hanrisr 做AIGC 内容生成工程师·重排模型的候选截断相关的问题，方向对标腾讯的初级AIGC 内容生成工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://hanrisr.github.io>
-- 仓库：<https://github.com/hanrisr/aigcgen_jd029>
+- 仓库：<https://github.com/hanrisr/rerank_candidate_truncation_count_trace>
 
 ## 许可
 
